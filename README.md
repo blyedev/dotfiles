@@ -23,6 +23,8 @@ stow .
 
 - **Custom Bash Prompt:** Powered by [Starship](https://starship.rs/).
 
+![Screenshot of Starship terminal](./ui/starship-demo.png)
+
 - **Git Enhancements:** I prefer using the terminal for Git operations, this alias of git log makes that much easier:
 
 ```bash
