@@ -1,0 +1,8 @@
+[user]
+	email = adam.smielewski@gmail.com
+	name = blyedev
+[alias]
+	lg = log --all --oneline --graph --decorate --abbrev-commit --date=relative
+	stat = status -sb
+[core]
+	editor = nvim -c 'set spell'
