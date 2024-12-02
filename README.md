@@ -27,9 +27,7 @@ stow .
 
 - **Git Enhancements:** I prefer using the terminal for Git operations, this alias of git log makes that much easier:
 
-```bash
-git lg
-```
+![Screenshot of git log alias](./ui/git-log-demo.png)
 
 That's pretty much it. Check out my [neovim config](https://github.com/blyedev/nvim-config) for the cooler stuff
 
