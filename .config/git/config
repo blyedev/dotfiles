@@ -1,8 +1,11 @@
 [user]
-	email = adam.smielewski@gmail.com
+	email = adam.smielewski@blyedev.com
 	name = blyedev
+	signingkey = 8686F8248F3089EB
 [alias]
 	lg = log --all --oneline --graph --decorate --abbrev-commit --date=relative
 	stat = status -sb
 [core]
 	editor = nvim -c 'set spell'
+[commit]
+	gpgSign = true
