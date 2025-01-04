@@ -10,6 +10,10 @@ HISTSIZE=10000
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+docker() {
+    sudo docker "$@"
+}
+
 # Allow terminal windows to resize
 shopt -s checkwinsize
 
