@@ -28,3 +28,6 @@ export LESS_LINES=-2
 
 # Use a custom bash prompt
 eval "$(starship init bash)"
+
+# Created by `pipx` on 2025-01-07 23:17:39
+export PATH="$PATH:/home/blyedev/.local/bin"
