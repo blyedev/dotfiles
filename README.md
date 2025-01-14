@@ -14,7 +14,7 @@ The standout feature of this repository is the Neovim configuration which is act
 **Run**:
 
 ```sh
-git clone --recursive git@github.com:blyedev/dotfiles.git ~/dotfiles
+git clone --recurse-submodules https://github.com/blyedev/dotfiles ~/dotfiles
 cd ~/dotfiles
 stow .
 ```
