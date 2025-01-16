@@ -10,6 +10,14 @@ HISTSIZE=10000
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+alias k='kubectl'
+
+# Enable kubectl autocompletion
+source <(kubectl completion bash)
+
+# Enable autocompletion for the k alias
+complete -F __start_kubectl k
+
 docker() {
     sudo docker "$@"
 }
