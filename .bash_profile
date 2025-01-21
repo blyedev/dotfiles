@@ -12,3 +12,4 @@ fi
 
 # Created by `pipx` on 2025-01-07 23:17:39
 export PATH="$PATH:/home/blyedev/.local/bin"
+. "$HOME/.cargo/env"
