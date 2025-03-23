@@ -25,11 +25,9 @@ docker() {
 # Allow terminal windows to resize
 shopt -s checkwinsize
 
-# Lookup unknown commands in package manager
-source /usr/share/doc/pkgfile/command-not-found.bash
-
-# Set up nvm to manage node versions
-source /usr/share/nvm/init-nvm.sh
+export NVM_DIR="$HOME/.nvm"
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # Because we use a 3 line long bash prompt we need to shorten `less` output
 export LESS_LINES=-2
@@ -37,6 +35,14 @@ export LESS_LINES=-2
 # Use a custom bash prompt
 eval "$(starship init bash)"
 
-# Created by `pipx` on 2025-01-07 23:17:39
-export PATH="$PATH:/home/blyedev/.local/bin"
 . "$HOME/.cargo/env"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+# Created by `pipx` on 2025-03-15 08:56:09
+export PATH="$PATH:$HOME/.local/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.lmstudio/bin"
