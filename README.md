@@ -1,6 +1,8 @@
 # Blyedev's dotfiles
 
-These are config files to set up the Arch Linux terminal the way I like using it.
+These are config files to set up the MacOS terminal the way I like using it.
+
+Formerly I have used this config for Arch Linux, if you're looking for os specific configurations I recommend you check out the history of the project.
 
 The standout feature of this repository is the Neovim configuration which is actually not under version control here but included as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). Keeping Neovim's config separate allows me to keep better track of it's history, while still allowing me to have everything sort of in one place.
 
