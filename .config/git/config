@@ -11,3 +11,5 @@
 	gpgSign = true
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[includeIf "gitdir:~/xalt/"]
+    path = ~/.config/git/config-xalt
