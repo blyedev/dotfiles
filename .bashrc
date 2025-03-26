@@ -7,6 +7,8 @@
 
 HISTSIZE=10000
 
+EDITOR=nvim
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
@@ -40,6 +42,7 @@ eval "$(starship init bash)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
+eval "$(pyenv virtualenv-init -)"
 
 # Created by `pipx` on 2025-03-15 08:56:09
 export PATH="$PATH:$HOME/.local/bin"
